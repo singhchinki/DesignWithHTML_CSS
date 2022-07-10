@@ -1,0 +1,85 @@
+<!doctype html>
+<title>Example</title>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+  }
+  .outer-col-1 {
+    background: #D7E8D4;
+    flex: 1;
+  }
+  .outer-col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+  }
+  .inner-row {
+    display: flex;
+    flex-direction: row;
+  }
+  .inner-col {
+    flex: 4;
+  }
+  .inner-row article {
+    min-height: 20vh;
+    background: aqua;
+  }
+  .inner-row aside {
+    background: beige;
+    flex: 1;
+  }
+  header, footer {
+    background: yellowgreen;
+    height: 15vh;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    font-size: 35px;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+</style>
+<body>
+  <nav class="outer-col-1">Left Side Bar</nav>
+  <div class="outer-col-2">
+  	<header>HEADER - Sample Flexbox Example</header>
+    <div class="inner-row">
+      <div class="inner-col">
+        <article>
+            <h2>First Article</h2>
+            <p>Working together to keep Tech employability of enginners alive and
+                accesible so tech comanies worldwide
+                get contributors and creators for technology solutions .
+                We believe this act of human collaboration acrosss an employability
+                platform is essential to individual growth and our collective future.</p>
+        </article>
+        <article>
+            <h2>Second Article</h2>
+            <p>Working together to keep Tech employability of enginners alive and
+                accesible so tech comanies worldwide
+                get contributors and creators for technology solutions .
+                We believe this act of human collaboration acrosss an employability
+                platform is essential to individual growth and our collective future.</p>
+        </article>
+        <article>
+            <h2>Third Article</h2>
+            <p>Working together to keep Tech employability of enginners alive and
+                accesible so tech comanies worldwide
+                get contributors and creators for technology solutions .
+                We believe this act of human collaboration acrosss an employability
+                platform is essential to individual growth and our collective future.</p>
+        </article>
+
+  		<footer>Footer</footer>
+      </div>
+    	<aside>Right side Bar</aside>
+    </div>
+  </div>
+</body>
